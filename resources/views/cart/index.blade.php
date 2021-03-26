@@ -40,6 +40,9 @@
             <div class="cart__sub-total">
                 小計：¥ {{ number_format($total_price) }}円
             </div>
+            <button class="cart__purchase btn btn-primary" onclick="location.href='{{ route('cart.checkout')}}'">
+            購入する
+            </button>
         @else
                 <div class="cart__empty">
                     カートに商品が入っていません
